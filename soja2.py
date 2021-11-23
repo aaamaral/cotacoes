@@ -81,7 +81,7 @@ for i in tablo_milho['Valor R$*']:
     num_str = (str(num))
     a = int(len(num_str) / 3)
         
-    nuevos_numeros2.append('{}'.format(num_str[:3*a]+','+num_str[3*a:]))
+    nuevos_numeros2.append('{}'.format(num_str[:2*a]+','+num_str[2*a:]))
 tablo_milho['Valor R$*']=nuevos_numeros2
 nuevos_numeros22=[]
 for i in tablo_milho['Valor US$*']:
@@ -202,6 +202,18 @@ app.layout = html.Div([
     html.Div(
     dbc.Row(dbc.Col(
     dcc.Dropdown(
+        id='cities-dropdown',clearable=False, style={    
+                    'color': '#565555',
+                    'borderStyle':'solid',
+                    # 'width': '50%',                  
+                    'font-size': '15px',
+                    'textAlign': 'center'}  ), 
+    width=6,md={'size':4,'offset':4},xs={'size':6,'offset':3}),className='mb-4',),),
+
+
+    html.Div(
+    dbc.Row(dbc.Col(
+    dcc.Dropdown(
         id='countries-dropdown', 
     
         options=[{'label': k, 'value': k} for k in horas],
@@ -216,17 +228,7 @@ app.layout = html.Div([
         
     
 
-    html.Div(
-    dbc.Row(dbc.Col(
-    dcc.Dropdown(
-        id='cities-dropdown',clearable=False, style={    
-                    'color': '#565555',
-                    'borderStyle':'solid',
-                    # 'width': '50%',                  
-                    'font-size': '15px',
-                    'textAlign': 'center'}  ), 
-    width=6,md={'size':4,'offset':4},xs={'size':6,'offset':3}),className='mb-4',),),
-
+    
     
 
     dbc.Row(dbc.Col(html.Div(id='display-selected-values', className="text-center",style={    
@@ -351,5 +353,3 @@ def set_display_children(selected_country, selected_city):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-    
-    
