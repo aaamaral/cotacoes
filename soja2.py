@@ -55,7 +55,7 @@ for i in tablo_trigo['Valor R$/t*']:
     num_str = (str(num))
     
         
-    nuevos_numeros1.append('{}'.format(num_str[:5]+','+num_str[5:8]))
+    nuevos_numeros1.append('{}'.format(num_str[:5]+num_str[5:8]))
 tablo_trigo['Valor R$/t*']=nuevos_numeros1
 
 nuevos_numeros21=[]
@@ -132,7 +132,7 @@ for i in tablo_bezerro['Valor R$*']:
     num = str(i)
     num_str = (str(num))
     if len(num_str) > 5:
-        nuevos_numeros4.append('{}'.format(num_str[:5]+','+num_str[5:9]))
+        nuevos_numeros4.append('{}'.format(num_str[:5]+num_str[5:9]))
     else:
         nuevos_numeros4.append(num_str)
     
@@ -237,6 +237,48 @@ app.layout = html.Div([
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     } ),width=12,md={'size':4,'offset':4,'font-size':'30px'},xs={'size':4,'offset':3,'font-size':'15px'},className='mb-4',),),
+
+    dbc.Row(dbc.Col(html.Div([       
+    html.P('Fonte: SE Soja = INDICADOR DA SOJA ESALQ/BM&FBOVESPA - PARANAGUÁ',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    }),
+    html.P('SE Trigo = PREÇO MÉDIO DO TRIGO CEPEA/ESALQ - PARANÁ',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    }),
+    html.P('SE Milho = INDICADOR DO MILHO ESALQ/BM&FBOVESPA',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    }),
+    html.P('SE Boi = INDICADOR DO BOi GORDO CEPEA/B3',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    }),
+    html.P('SE Bezerro = INDICADOR DO BEZERRO ESALQ/BM&FBOVESPA - MATO GROSSO DO SUL',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    }),
+    html.P('SE Algodão = INDICADOR DO ALGODÃO EM PLUMA CEPEA/ESALQ - PRAZO DE 8 DIAS',style={    
+                    'color': '#565555',  
+                    'font-size': '6px',
+                    'font': 'sans-serif',
+                    'font-weight': 'bolder',
+                    } )]),width=12,md={'size':4,'offset':4,'font-size':'30px'},xs={'size':4,'offset':3,'font-size':'15px'},),),
+
+
+
+     
 
     dcc.Store(id='display-selected-values2'),
 
