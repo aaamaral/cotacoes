@@ -239,39 +239,39 @@ app.layout = html.Div([
                     } ),width=12,md={'size':4,'offset':4,'font-size':'30px'},xs={'size':4,'offset':3,'font-size':'15px'},className='mb-4',),),
 
     dbc.Row(dbc.Col(html.Div([       
-    html.P('Fonte: SE Soja = INDICADOR DA SOJA ESALQ/BM&FBOVESPA - PARANAGUÁ',style={    
+    html.P('Fonte: Soja = INDICADOR DA SOJA ESALQ/BM&FBOVESPA - PARANAGUÁ',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     }),
-    html.P('SE Trigo = PREÇO MÉDIO DO TRIGO CEPEA/ESALQ - PARANÁ',style={    
+    html.P('Trigo = PREÇO MÉDIO DO TRIGO CEPEA/ESALQ - PARANÁ',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     }),
-    html.P('SE Milho = INDICADOR DO MILHO ESALQ/BM&FBOVESPA',style={    
+    html.P('Milho = INDICADOR DO MILHO ESALQ/BM&FBOVESPA',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     }),
-    html.P('SE Boi = INDICADOR DO BOi GORDO CEPEA/B3',style={    
+    html.P('Boi = INDICADOR DO BOi GORDO CEPEA/B3',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     }),
-    html.P('SE Bezerro = INDICADOR DO BEZERRO ESALQ/BM&FBOVESPA - MATO GROSSO DO SUL',style={    
+    html.P('Bezerro = INDICADOR DO BEZERRO ESALQ/BM&FBOVESPA - MATO GROSSO DO SUL',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     }),
-    html.P('SE Algodão = INDICADOR DO ALGODÃO EM PLUMA CEPEA/ESALQ - PRAZO DE 8 DIAS',style={    
+    html.P('Algodão = INDICADOR DO ALGODÃO EM PLUMA CEPEA/ESALQ - PRAZO DE 8 DIAS',style={    
                     'color': '#565555',  
-                    'font-size': '6px',
+                    'font-size': '7px',
                     'font': 'sans-serif',
                     'font-weight': 'bolder',
                     } )]),width=12,md={'size':4,'offset':4,'font-size':'30px'},xs={'size':4,'offset':3,'font-size':'15px'},),),
